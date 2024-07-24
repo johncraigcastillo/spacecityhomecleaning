@@ -27,6 +27,7 @@
 		"prettier-plugin-astro": "^0.0.12"
 	},
 	"dependencies": {
+		"@astrojs/netlify": "^5.4.0",
 		"@fontsource/great-vibes": "^5.0.21"
 	}
 }
