@@ -1,0 +1,67 @@
+---
+import ContactForm from '../../components/forms/ContactForm.astro';
+import Layout from '../../layouts/Page.astro';
+import { Container } from '@components/odyssey-theme';
+
+const seo = {
+	title: 'Contact | Space City Home Cleaning | Houston, Texas',
+	description: 'Contact Page',
+};
+---
+
+<Layout {seo}>
+	<Container>
+		<section class="contact-hero__section">
+			<div class="contact-hero__text-section">
+				<h1>Contact Us</h1>
+				<p>
+					Call or text us for a free qoute or to schedule an appointment. We are
+					available 24/7 to assist you with any questions or concerns you may
+					have. We look forward to hearing from you!
+				</p>
+				<div>
+					<p>
+						<em><a href="tel:3462763466">(346) 276-3466</a></em> • <em
+							><a href="mailto:Spacecityhc23@gmail.com"
+								>Spacecityhc23@gmail.com</a
+							></em
+						>
+					</p>
+				</div>
+			</div>
+			<!-- <div class="col-2__container"> -->
+			<!-- 	<ContactForm /> -->
+			<!-- </div> -->
+		</section>
+	</Container>
+</Layout>
+
+<style>
+	.contact-hero__section {
+		margin: 3rem auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		min-height: calc(90vh - var(--navbar-height));
+		max-width: 75%;
+		gap: 3rem;
+	}
+	.contact-hero__text-section {
+		padding: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--theme-surface-1);
+		border-radius: var(--theme-shape-radius);
+	}
+	.col-2__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media (max-width: 768px) {
+		.contact-hero__section {
+			max-width: 90%;
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

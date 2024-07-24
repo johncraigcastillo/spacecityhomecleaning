@@ -1,0 +1,48 @@
+:root {
+	/* Theme Colors */
+
+	/* CSS HEX 
+	--rosy-brown: #c5a8a6ff;
+	--black: #000000ff;
+	--antiflash-white: #eaeff3ff;
+	--sky-blue: #83c3dcff;
+	--cambridge-blue: #87a899ff;
+hsla(190, 87%, 59%)
+  */
+
+	--theme-primary: hsl(284, 39%, 60%);
+	--theme-primary-hover: hsl(284, 39%, 40%);
+	--theme-on-primary: #fff;
+
+	--theme-bg: #fff;
+	--theme-on-bg: #000;
+
+	--theme-surface-1: hsla(190, 87%, 44%);
+	--theme-on-surface-1: #000;
+
+	--theme-surface-2: hsla(190, 87%, 44%);
+	--theme-on-surface-2: #000;
+
+	/* Theme Shapes */
+	/* Set this to 0 if you want all of the rounded cards, images, etc to be straight edges */
+	--theme-shape-radius: clamp(3rem, 2rem, 1rem);
+	--theme-button-border-radius: 3rem;
+
+	/* Theme Transition */
+	--theme-transition: 0.2s ease-in-out;
+
+	/* Theme Layout */
+	--section-margin: 3rem;
+	--theme-grid-gap: 1rem;
+	--container-max-width: 1440px;
+	--container-max-width-narrow: 960px;
+	--container-padding: 0 1rem;
+
+	--theme-blog-post-header-width: 1200px;
+
+	/* Theme Fonts */
+	--theme-font-family-serif: 'Roboto Serif', Georgia, Cambria, 'Times New Roman',
+		Times, serif;
+	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
+		sans-serif;
+}
